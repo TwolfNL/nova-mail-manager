@@ -17,7 +17,7 @@
 	],
 	"require": {
 		"php": ">=8.1",
-		"binarybuilds/laravel-mail-manager": "^1.0"
+		"binarybuilds/laravel-mail-manager": "dev-master"
 	},
 	"repositories": [
 		{
