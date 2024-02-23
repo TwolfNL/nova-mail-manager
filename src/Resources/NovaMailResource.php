@@ -15,6 +15,7 @@ use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Date;
 use Laravel\Nova\Resource;
 use Illuminate\Http\Request;
 
@@ -61,6 +62,8 @@ class NovaMailResource extends Resource
             Boolean::make(__('Is Queued'), 'is_queued'),
             Boolean::make(__('Is Sent'), 'is_sent'),
             Number::make(__('Tries'), 'tries'),
+            Date::make(__('Verstuurd op'), 'created_at')->sortable(),
+            Date::make(__('Laatst geprobeerd'), 'updated_at')->sortable(),
         ];
     }
 
