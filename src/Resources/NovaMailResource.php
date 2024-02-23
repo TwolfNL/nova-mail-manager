@@ -63,7 +63,6 @@ class NovaMailResource extends Resource
             Boolean::make(__('Is Sent'), 'is_sent'),
             Number::make(__('Tries'), 'tries'),
             Date::make(__('Verstuurd op'), 'created_at')->sortable(),
-            Date::make(__('Laatst geprobeerd'), 'updated_at')->sortable(),
         ];
     }
 
